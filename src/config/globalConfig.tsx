@@ -1,4 +1,4 @@
-export const limit = 3; 
+export const limit = 2; 
 
 export const radius = 50;
 
