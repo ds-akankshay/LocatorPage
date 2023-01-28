@@ -235,11 +235,11 @@ const optionClickHandler = () =>{
                       fieldApiName: "address.line1",
 
                     },
-                    {
-                      entityType: "location",
-                      fieldApiName: "address.line2",
+                    // {
+                    //   entityType: "location",
+                    //   fieldApiName: "address.line2",
 
-                    },
+                    // },
                     {
                       entityType: "location",
                       fieldApiName: "address.city",
@@ -248,6 +248,11 @@ const optionClickHandler = () =>{
                     {
                       entityType: "location",
                       fieldApiName: "address.postalCode",
+
+                    },
+                    {
+                      entityType: "location",
+                      fieldApiName: "address.region",
 
                     },
                     // {

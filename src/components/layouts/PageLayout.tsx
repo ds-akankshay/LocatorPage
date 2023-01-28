@@ -17,7 +17,9 @@ type Props = {
     return (
         <div className="min-h-screen">
             <Header />
+            <div class="overflow-y-scroll ...">
                 {children}
+                </div>
             <Footer />
         </div>
     );
