@@ -36,8 +36,10 @@ const LocationCard: CardComponent<Location> = ({ result }) => {
 
     <div className={`location result`} id={`result-${result.index}`}>
        <div>{metersToMiles(result.distance)} miles</div>
-      <h3 className="">{result.rawData.name} 
-      </h3>
+       <a href={result.rawData.slug}><h3 className="">{result.rawData.name} 
+      </h3></a>
+        {/* <h3 className="">{result.rawData.name} 
+      </h3> */}
       {/* <p className="text-sm text-slate-700">{address.line1}</p>
       <p className="text-sm text-slate-700">{address.city}, {address.region}, {address.postalCode} </p> */}
       <Address address={address} />

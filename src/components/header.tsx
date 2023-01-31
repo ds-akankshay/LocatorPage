@@ -1,6 +1,5 @@
 import * as React from "react";
-import Cta from "./cta";
-import logo from "../../images/Prezzo_Logo_RGB_OffWhite.png";
+import Cta from "../components/cta";
 
 type Link = {
   label: string;
@@ -13,48 +12,25 @@ const links: Link[] = [
     url: "/",
   },
   {
-    label: "Menu",
-    url: "#",
+    label: "About",
+    url: "/turtlehead-tacos",
   },
-  {
-    label: "Delivery & Collection",
-    url: "#",
-  },
-  {
-    label: "A Celebration of Flavour",
-    url: "#",
-  },
-  {
-    label: "E-gifts",
-    url: "#",
-  },
-  {
-    label: "Christmas",
-    url: "#",
-  },
-  {
-    label: "Working with us",
-    url: "#",
-  }
 ];
 
 const Header = () => {
   const linkDoms = links.map((link) => (
-      <a classNameName="navbar-item" href={link.url} >
-        <span>{link.label}</span>
+    <div key={link.label}>
+      <a href={link.url} target="_blank" rel="noreferrer">
+        {link.label}
       </a>
+    </div>
   ));
 
   return (
-    <>
-      <nav className="flex items-center justify-between flex-wrap bg-black text-white p-6">
+    <nav className="flex items-center justify-between flex-wrap bg-black text-white p-6">
   <div className="flex items-center flex-shrink-0 text-white mr-6">
     <svg className="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
-    <span className="font-semibold text-xl tracking-tight flex"> <img className="h-20 w-50" src ="https://vowels.ae/blog/wp-content/uploads/2022/06/best-tips-for-restaurant-logo-designing.jpg"/></span>
-
-    
-
-
+    <span className="font-semibold text-xl tracking-tight"><img className="h-20 w-50" src ="https://t3.ftcdn.net/jpg/04/69/99/84/360_F_469998410_dS3rIFPywmpTDYYr7VY6wd1SlV6c7Fa7.jpg"/></span>
   </div>
   <div className="block lg:hidden">
     <button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
@@ -64,21 +40,20 @@ const Header = () => {
   <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
     <div className="text-sm lg:flex-grow">
       <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-        Menu
+        Home
       </a>
       <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-        Home
+        Menu
       </a>
       <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
         Reserve
       </a>
     </div>
     <div>
-      <a href="#" className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Details</a>
+      <a href="#" className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
     </div>
   </div>
 </nav>
-    </>
   );
 };
 

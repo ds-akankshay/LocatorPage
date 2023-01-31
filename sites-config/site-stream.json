@@ -1,5 +1,5 @@
 {
-  "$id": "site-entity",
+  "$id": "gb",
   "filter": {
     "entityIds": ["siteGlobalData"] 
   },
@@ -8,7 +8,9 @@
     "name",
     "facebookPageUrl",
     "instagramHandle",
-    "twitterHandle"
+    "twitterHandle",
+    "c_headerP",
+    "c_footerP"
   ],
   "localization": {
     "locales": ["en"],
